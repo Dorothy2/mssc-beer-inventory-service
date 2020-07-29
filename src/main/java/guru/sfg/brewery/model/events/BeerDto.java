@@ -1,4 +1,4 @@
-package guru.sfg.common.web.model;
+package guru.sfg.brewery.model.events;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

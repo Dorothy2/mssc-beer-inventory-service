@@ -1,18 +1,14 @@
 package guru.sfg.beer.inventory.service.services;
 
-import javax.jms.Destination;
-
 import org.springframework.jms.annotation.JmsListener;
-import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import guru.sfg.beer.inventory.service.config.JmsConfig;
 import guru.sfg.beer.inventory.service.domain.BeerInventory;
-import guru.sfg.common.events.NewInventoryEvent;
 import guru.sfg.beer.inventory.service.repositories.BeerInventoryRepository;
-import guru.sfg.common.web.model.BeerDto;
-
+import guru.sfg.brewery.model.events.BeerDto;
+import guru.sfg.brewery.model.events.NewInventoryEvent;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
